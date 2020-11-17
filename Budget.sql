@@ -631,7 +631,7 @@ GROUP BY c.CatName
 
 
 --QUERY 13: Write a SELECT query that utilizes a CALCULATED FIELD
-SELECT COUNT(d.DetailsID) AS 'CatCount', SUM(d.DetailsAmt) AS 'DetailsAmtPerCat', c.CatName, '$' + STR(ROUND(SUM(d.DetailsAmt)/COUNT(d.DetailsID), 0)) AS 'CalculatedAvgSpend'
+SELECT COUNT(d.DetailsID) AS 'CatCount', SUM(d.DetailsAmt) AS 'DetailsAmtPerCat', c.CatName, '%' + STR(ROUND(SUM(d.DetailsAmt)/COUNT(d.DetailsID), 0)) AS 'CalculatedAvgSpend'
 FROM dbo.Details d
 INNER JOIN dbo.Category c 
 ON d.CatID = c.CatID 
