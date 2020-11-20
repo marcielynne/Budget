@@ -507,9 +507,9 @@ ON dbo.Details (DetailsID, DetailsAmt)
 
 --QUERY 19: Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries
     --Improves performance of QUERY 10
-CREATE NONCLUSTERED INDEX IX_Transaction_TransDate
-ON dbo.[Transaction] (TransDate)
-INCLUDE (TransVendor)
+CREATE NONCLUSTERED INDEX IX_Transaction_TransVendor
+ON dbo.[Transaction] (TransVendor)
+INCLUDE (TransDate)
 
 --QUERY 1: Write a SELECT query that uses a WHERE clause
 SELECT i.IncomePayer, i.IncomeDate, i.IncomeAmt
