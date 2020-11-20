@@ -497,8 +497,8 @@ VALUES (33.9, 1, 1, 1),
 
 --QUERY 17: Design a NONCLUSTERED INDEX with ONE KEY COLUMN that improves the performance of one of the above queries
     --Improves performance of QUERY 16
-CREATE NONCLUSTERED INDEX IX_PaymentDetails_PayDetailsID
-ON dbo.PaymentDetails (PayDetailsID)
+CREATE NONCLUSTERED INDEX IX_PaymentDetails_PayDetailsAmt
+ON dbo.PaymentDetails (PayDetailsAmt)
 
 --QUERY 18: Design a NONCLUSTERED INDEX with TWO KEY COLUMNS that improves the performance of one of the above queries
     --Improves performance of QUERY 13
@@ -507,8 +507,8 @@ ON dbo.Details (DetailsID, DetailsAmt)
 
 --QUERY 19: Design a NONCLUSTERED INDEX with AT LEAST ONE KEY COLUMN and AT LEAST ONE INCLUDED COLUMN that improves the performance of one of the above queries
     --Improves performance of QUERY 10
-CREATE NONCLUSTERED INDEX IX_Transaction_TransID
-ON dbo.[Transaction] (TransID)
+CREATE NONCLUSTERED INDEX IX_Transaction_TransDate
+ON dbo.[Transaction] (TransDate)
 INCLUDE (TransVendor)
 
 --QUERY 1: Write a SELECT query that uses a WHERE clause
