@@ -1,7 +1,7 @@
 # Budget SQL Code
 The Budget.sql file completes the SQL course requirements through [Code Louisville](https://codelouisville.org/) for 2020. It is an example database that helps organize transactions, income, categories, and other information related to a budget. The following requirements are fulfilled:
 - [x] A relational database was created with nine tables <br>
-- [x] Five of the tabels contain four or more columns <br>
+- [x] Five of the tables contain four or more columns <br>
 - [x] Two of the tables have a many-to-many relationship <br>
 - [x] Seven of the tables have a one-to-many relationship <br>
 - [x] The following data types are present: DATETIME, INT, VARCHAR, DECIMAL <br>
